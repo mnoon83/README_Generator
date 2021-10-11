@@ -2,7 +2,7 @@ const axios = require('axios')
 const inquirer = require('inquirer')
 const markdown = require ('markdown')
 
-const prompt= [
+const questions= [
 {
   type: 'input'  
   name: 'title'
@@ -61,3 +61,5 @@ function init(){
     writeFile("README.md", response)
   })
 }
+
+init ()
